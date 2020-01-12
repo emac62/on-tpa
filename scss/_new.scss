@@ -1,0 +1,21 @@
+.section-header {
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+section a {
+  color: $light-color;
+  background: $dark-green;
+}
+
+section a:hover {
+  color: $dark-green;
+  background: $background-color;
+}
+
+.question {
+  font-weight: 600;
+  font-style: italic;;
+}
+

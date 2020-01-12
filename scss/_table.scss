@@ -1,0 +1,62 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+	border: 1px solid $dark-green;
+	margin-top: 2em;
+}
+
+table th {
+  border: 1px solid $dark-green !important;
+	color: $dark-green;
+	padding: 0 10px;
+}
+
+table td {
+  border: 1px solid $dark-green !important;
+  color: $dark-green;
+}
+
+table th.none {
+	border-top: 3px solid transparent !important;
+	border-right: 3px solid transparent !important;
+}
+
+table td.none {
+  border: 3px solid transparent !important;
+}
+
+table td.speech-bubble {
+	background: $light-color;
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	margin: 20px 30px;
+	width: 150px;
+	border-radius: 10px;
+}
+
+table td.speech-bubble:after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 50%;
+	right: 100%;
+	margin-top: -10px;
+	width: 0;
+	height: 0;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid $light-color;
+}
+
+.num {
+	text-align: center;
+	padding: 0 10px;
+}
+.comp {
+	padding: 10px;
+}
+

@@ -1,0 +1,113 @@
+@import './variables';
+@import './home';
+@import './new';
+@import './links';
+@import './table';
+@import './nav';
+@import './quoteAdvice';
+@import './media';
+
+
+body {
+  background: linear-gradient(
+                to right, 
+                rgba($light-green, 0.8),
+                rgba($light-green, 0.3)
+  );
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+
+.mainHeader {
+  
+
+  .header-image {
+    height: 25 vh;
+    background: 
+        url('../img/chalkboardBackground.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .page-title {
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 3px solid $background-color;
+    color: $light-color;
+    line-height: 1.25em;
+  }
+
+}
+
+.main-section {
+  padding-top: 1.5em;
+
+  .section-header {
+    text-align: center;
+  }
+}
+
+
+.footer {
+  border-top: 3px solid $background-color;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: $dark-green;
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  float: left;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: $dark-green;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: $light-green;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  background: $light-color;
+  border: 0.75px solid $dark-green;
+  color: $dark-green;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 2px 0;
+
+}
+
+.button {
+  padding: 0.75em 0;
+
+}
+
+@media screen and (min-width: 425px) {
+  nav li {
+    display: inline;
+  }
+}
