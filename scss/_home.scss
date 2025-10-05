@@ -1,10 +1,19 @@
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
   .inline-image {
     width: auto;
     text-align: center;
     padding: 20px;
   }
-  
-  img {
+
+  .inline-image img {
     border-radius: 1rem;
     display: block;
     margin-right: auto;
@@ -13,6 +22,51 @@
     height: auto;
   }
 
+  .ads {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .image-with-links {
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-with-links img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    ;
+  }
+
+  .app-links-row {
+    position: absolute;
+    bottom: 10px; // adjust as needed
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .app-links-row img {
+    height: 40px;
+    padding: 0;
+    object-fit: contain;
+  }
+
+  .app-links-row img[alt="Get it on Google Play"] {
+    padding: 0;
+    height: 55px;
+  }
 
 
 
+  @media (max-width: 600px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
