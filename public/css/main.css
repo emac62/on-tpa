@@ -326,7 +326,7 @@ body {
 
 .mainHeader .header-image {
   height: 25 vh;
-  background: url("../img/chalkboardBackground.jpg");
+  background: url("/img/chalkboardBackground.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -400,5 +400,3 @@ body {
     display: inline;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="google-adsense-account" content="ca-pub-1618980018345182">
+    <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg"/>
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png"/>
+    <link rel="manifest" href="/img/favicon/site.webmanifest"/>
+    <link rel="stylesheet" href="/public/css/main.css"/>
+    <meta name="description" content="{{ description }}">
+    <meta name="keywords" content="{{ keywords }}">
+    <title>{{ title }}</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1618980018345182"
+     crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="mainHeader">
+      <div class="header-image">
+        <h1 class="page-title">
+        Advice for Ontario Teachers Perfomance Appraisal
+      </h1>
+      </div>
+    </header>
+
+    <!-- Navbar will be loaded here -->
+    <div id="navbar">
+      <nav id="mainNav" role="navigation">
+        <div class="container">
+          <ul class="mainNavList">
+            <li>
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/exp/">Experienced</a>
+              {% if page.fileSlug == "exp" and sections %}
+                <ul>
+                  {% for section in sections %}
+                    <li>
+                      <a href="#{{ section.id }}">{{ section.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+            <li>
+              <a class="nav-link" href="/new/">New</a>
+              {% if page.fileSlug == "new" and sections %}
+                <ul>
+                  {% for section in sections %}
+                    <li>
+                      <a href="#{{ section.id }}">{{ section.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+            <li>
+              <a class="nav-link" href="/links/">Links</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <main>
+        {{ content | safe }}
+      </main>
+      <div class="footer">
+      &copy Copyright <span id="year"></span>
+        <a href="https://www.borderlineboomer.ca" target="_blank" rel="noopener noreferrer">borderlineBoomer</a>
+      </div>
+    </div>
+    <script>
+
+      document
+        .getElementById("year")
+        .textContent = new Date().getFullYear();
+    </script>
+  </body>
+
+</html>

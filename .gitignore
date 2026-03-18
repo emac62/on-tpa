@@ -1,1 +1,5 @@
 .vscode
+_archive_scss/
+_site/
+node_modules/
+.DS_Store
