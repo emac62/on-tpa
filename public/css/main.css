@@ -24,7 +24,7 @@
 }
 
 .inline-image img {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -32,49 +32,7 @@
   height: auto;
 }
 
-.ads {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
-.image-with-links {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
-}
-
-.image-with-links img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 0;
-}
-
-.app-links-row {
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  margin: 0;
-}
-
-.app-links-row img {
-  height: 50px;
-  padding: 0;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-
-.app-links-row img[alt="Get it on Google Play"] {
-  padding: 0;
-  height: 65px;
-}
 
 @media (max-width: 800px) {
   .flex-container {
